@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>STUDENT FORM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <!-- NAVIGATION BAR -->
+
+
+    <nav class="navbar navbar-expand-sm bg-light ">
+
+        <img src="https://tse4.mm.bing.net/th/id/OIP.GbF-dydiai059qwqT8Fe4AHaHa?pid=Api&P=0&w=300&h=300" alt=""
+            width="50px" height="50px">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="form.html">GROUP 6</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://127.0.0.1:5500/student.html">Students</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://127.0.0.1:5500/attendance.html">Attendance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://127.0.0.1:5500/form.html">Form</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex ms-auto">
+                    <input class="form-control me-2" type="text" placeholder="Search">
+                    <button type="button" class="btn btn-outline-success">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Header -->
+    <div class="container p-4 shadow" style="margin-top: 20px;">
+        <div class="container p-4 bg-white" style="margin-top: 20px;">
+            <div class="row">
+                <p class="fs-1 text-center mb-4"><b>Add Student Form</b></p>
+                <!-- Profile Picture -->
+                <div class="col-md-3">
+                    <div class="bg-transparent rounded p-3 h-100">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="https://static.vecteezy.com/system/resources/previews/009/292/244/non_2x/default-avatar-icon-of-social-media-user-vector.jpg"
+                                class="rounded-circle mb-3" alt="user" width="140" height="140">
+                            <input class="form-control mb-2" type="file" id="formFile">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STUDENT FORM -->
+                <div class="col-md-9">
+                    <form class="was-validated">
+                        <div class="row mb-3">
+                            <div class="col-md-4">
+                                <label for="validationServer01" class="form-label">First Name</label>
+                                <input type="text" class="form-control is-valid" id="validationServer01"
+                                    placeholder="ex. Juan" required>
+                                <div class="invalid-feedback">Required</div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationServer01" class="form-label">Last Name</label>
+                                <input type="text" class="form-control is-valid" id="validationServer01"
+                                    placeholder="ex. Dela Cruz" required>
+                                <div class="invalid-feedback">Required</div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationServer01" class="form-label">Middle name</label>
+                                <input type="text" class="form-control is-valid" id="validationServer01"
+                                    placeholder="ex. Cruz" optional>
+                                <div class="invalid-feedback">Required</div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-4">
+                                <label class="form-label">Gender</label>
+                                <div>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="validationFormCheck2"
+                                            name="radio-stacked" required>
+                                        <label class="form-check-label" for="validationFormCheck2">Male</label>
+                                    </div>
+                                    <div class="form-check mb-3">
+                                        <input type="radio" class="form-check-input" id="validationFormCheck3"
+                                            name="radio-stacked" required>
+                                        <label class="form-check-label" for="validationFormCheck3">Female</label>
+                                        <div class="invalid-feedback"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">Civil Status</label>
+                                <select class="form-select" required aria-label="Civil Status">
+                                    <option value="1">Single</option>
+                                    <option value="2">Married</option>
+                                    <option value="3">Divorced</option>
+                                    <option value="3">Widowed</option>
+                                </select>
+                                <div class="invalid-feedback">Invalid Selection</div>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">Date of Birth</label>
+                                <input type="date" class="form-control" required placeholder="mm/dd/yyyy">
+                                <div class="invalid-feedback">Required</div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-8">
+                                <label class="form-label">Place of Birth</label>
+                                <input type="text" class="form-control" required placeholder="ex. Tarlac City">
+                                <div class="invalid-feedback">Required</div>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">Nationality</label>
+                                <input type="text" class="form-control" required placeholder="ex. Filipino">
+                                <div class="invalid-feedback">Required</div>
+                            </div>
+                            
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-4">
+                                <label class="form-label">Religion</label>
+                                <input type="text" class="form-control" required placeholder="ex. Roman Catholic">
+                                <div class="invalid-feedback">Required</div>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">Contact No.</label>
+                                <input type="tel" class="form-control" pattern="09[0-9]{9}" required
+                                    placeholder="09XXXXXXXXX">
+                                <div class="invalid-feedback">Invalid Pattern</div>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" required placeholder="ex. JuanD@email.com">
+                                <div class="invalid-feedback">Required</div>
+                            </div>
+                        </div>
+                        <div class="row mb-7">
+                            <div class="col-md-14">
+                                <label class="form-label">Street</label>
+                                <input type="text" class="form-control" required placeholder="ex. 85th Subd.">
+                                <div class="invalid-feedback">Required</div>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">Barangay</label>
+                                <input type="text" class="form-control" required placeholder="ex. Sto. Rosario">
+                                <div class="invalid-feedback">Required</div>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">City</label>
+                                <input type="text" class="form-control" required placeholder="ex. Capas">
+                                <div class="invalid-feedback">Required</div>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">Province</label>
+                                <input type="text" class="form-control" required placeholder="ex. Tarlac">
+                                <div class="invalid-feedback">Required</div>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-success mt-2">Add Student</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
